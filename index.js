@@ -31,3 +31,36 @@ let lvl = "Easy";
 if (lvl === "Easy") {
     console.log(`the level is ${lvl} and the number of sec is ${levels.easy}`);
 }
+let myObj = {
+    username: 'mahmoud',
+    id: 1,
+    hire: true,
+    skills: {
+        one: "html",
+        two: "css",
+        three: "js"
+    }
+};
+console.log(myObj.hire);
+console.log(myObj.id);
+console.log(myObj.username);
+console.log(myObj.skills.three);
+myObj.hire = false;
+myObj.id = 23;
+myObj.username = "ahmed ";
+console.log(myObj.hire);
+console.log(myObj.id);
+console.log(myObj.username);
+console.log(myObj.skills.one);
+console.log(myObj.skills.two);
+let user = {
+    username: 'Mahmoud',
+    id: 23,
+    country: "Egypt",
+    language: "Arabic"
+};
+function getData(data) {
+    return `my name is ${data.username} , id is ${data.id} , language is ${data.language} and my country is ${data.country}`;
+}
+console.log(getData(user));
+console.log(getData({ username: "Ahmed ", id: 32, language: "English", country: "Egypt" }));
